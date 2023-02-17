@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtinputword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加你的单词"
+        android:textColor="@color/colorBlack"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_backtohome"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <ImageView
+        android:id="@+id/img_backtohome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12"
+        app:srcCompat="@mipmap/icon_backtohome" />
+
+    <LinearLayout
+        android:id="@+id/linear_english"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtinputword"
+        app:layout_constraintVertical_bias="0.188">
+
+        <TextView
+            android:id="@+id/tv_word_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingLeft="30dp"
+            android:text="英文单词："
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/et_word_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:theme="@style/login_edtxt_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_chinese"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_english"
+        app:layout_constraintVertical_bias="0.129">
+
+        <TextView
+            android:id="@+id/tv_word_chinese"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingLeft="30dp"
+            android:text="中文翻译："
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/et_word_chinese"
+            android:layout_width="223dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:theme="@style/login_edtxt_color" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_input_words"
+        android:layout_width="170dp"
+
+        android:layout_height="92dp"
+        android:forceHasOverlappingRendering="false"
+        app:cardBackgroundColor="@color/colorBgWhite"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_chinese"
+        app:layout_constraintVertical_bias="0.3">
+
+        <RelativeLayout
+            android:id="@+id/RL_input_words"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="151dp"
+                android:layout_height="76dp"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_input_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:padding="4dp"
+                    android:src="@mipmap/img_input_word" />
+
+                <TextView
+                    android:id="@+id/txt_input_word"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="添加单词"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

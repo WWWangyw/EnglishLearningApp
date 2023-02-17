@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLittleWhite">
+
+
+    <LinearLayout
+        android:id="@+id/linear_button"
+        android:layout_width="409dp"
+        android:layout_height="722dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_reviewword"
+            android:layout_width="150dp"
+
+            android:layout_height="80dp"
+
+            android:forceHasOverlappingRendering="false"
+            app:cardBackgroundColor="@color/colorBgWhite"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_review_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:padding="4dp"
+                    android:src="@mipmap/icon_reviewword" />
+
+                <TextView
+                    android:id="@+id/self_tv_reviewwords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="新增复习"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_consolidateword"
+            android:layout_width="150dp"
+
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
+
+            android:forceHasOverlappingRendering="false"
+            app:cardBackgroundColor="@color/colorBgWhite"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_consolidate_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:padding="4dp"
+                    android:src="@mipmap/icon_consolidate" />
+
+                <TextView
+                    android:id="@+id/self_tv_consolidatewords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="加强巩固"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_difficultword"
+            android:layout_width="150dp"
+
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
+            android:forceHasOverlappingRendering="false"
+            app:cardBackgroundColor="@color/colorBgWhite"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_difficultword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:padding="4dp"
+                    android:src="@mipmap/icon_difficultword" />
+
+                <TextView
+                    android:id="@+id/self_tv_difficultwords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="生词笔记"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_wordlist"
+            android:layout_width="150dp"
+
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
+            android:forceHasOverlappingRendering="false"
+            app:cardBackgroundColor="@color/colorBgWhite"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_wordlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:padding="4dp"
+                    android:src="@mipmap/icon_wordlist" />
+
+                <TextView
+                    android:id="@+id/self_tv_allwords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="全部单词"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

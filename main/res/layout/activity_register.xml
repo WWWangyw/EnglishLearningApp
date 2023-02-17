@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgWhite"
+    android:id="@+id/RL_Register">
+
+
+    <ImageView
+        android:id="@+id/img_backtoLogin"
+        android:layout_width="57dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/img_registertologin" />
+
+    <LinearLayout
+        android:id="@+id/linear_register1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="521dp"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="128dp"
+            android:layout_height="114dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.563"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.062"
+            app:srcCompat="@mipmap/register_app_logo" />
+
+        <TextView
+            android:id="@+id/register_slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="「stay focused,stay hungry」"
+            android:textColor="@color/colorBgOrange"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="469dp"
+        android:text="新用户注册"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <LinearLayout
+        android:id="@+id/linear_register2"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="384dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/login_username"
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/register_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:theme="@style/login_edtxt_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_register3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="315dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/login_userpassword"
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:theme="@style/login_edtxt_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_register4"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+        <!-- 第四个文本编辑框  输入验证码 -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_register5"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="223dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="验证码："
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/register_code"
+            android:layout_width="11dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
+            android:hint="请输入验证码"
+            android:theme="@style/login_edtxt_color" />
+
+        <ImageView
+            android:id="@+id/register_imagecode"
+            android:layout_width="28dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.5"
+            android:clickable="true"
+            android:onClick="onClick" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_registerCheck"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="131dp"
+        android:layout_weight="1"
+        android:background="@color/colorBgOrange"
+        android:text="注    册"
+        android:textColor="@color/colorBgWhite"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851" />
+
+</RelativeLayout>
